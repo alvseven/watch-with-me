@@ -179,7 +179,7 @@ export default function Home() {
               name="movie"
               render={({ field }) => (
                 <FormItem className="flex flex-col">
-                  <FormLabel>Qual o nome do filme/série?</FormLabel>
+                  <FormLabel>Qual o nome do filme?</FormLabel>
                   <Popover
                     open={moviePopoverIsOpen}
                     onOpenChange={setMoviePopoverIsOpen}
@@ -245,7 +245,7 @@ export default function Home() {
                     </PopoverContent>
                   </Popover>
                   <FormDescription>
-                    Selecione um filme para o seu convite.
+                    Selecione um filme para o seu convite, pesquise em inglês.
                   </FormDescription>
                   <FormMessage />
                 </FormItem>
