@@ -13,7 +13,7 @@ type InviteCreatedProps = {
 
 export function InviteCreated({ inviteId }: InviteCreatedProps) {
   const [copied, setCopied] = useState(false);
-  const inviteLink = `${window.location.origin}/invites/${inviteId}`;
+  const inviteLink = `${window.location.origin}/convites/${inviteId}`;
 
   const copyToClipboard = async () => {
     try {
