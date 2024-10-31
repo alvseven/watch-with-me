@@ -23,11 +23,8 @@ async function getInvite(id: string): Promise<InviteData | null> {
   return response.json();
 }
 
-export default async function InvitePage({
-  params,
-}: {
-  params: { id: string };
-}) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default async function InvitePage({ params }: any) {
   const { id } = params;
 
   const invite = await getInvite(id);
